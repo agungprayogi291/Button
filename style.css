@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #000000;
+   text-align: center;
+
+}
+.container{
+    margin:20% auto;
+}
+.btn{
+   
+    padding:10px 25px;
+    border-radius: 8px;
+    background-color: rgb(51, 50, 50);
+  
+     outline-color:rgb(51, 50, 50) ;
+  
+    letter-spacing: 1.2px;
+    font-weight: bolder;
+    font-size:24px;
+    font-family:sans-serif;
+    outline:none;
+    border-top-left-radius: 50px;
+    
+    border-bottom-right-radius: 50px;
+    /* animasi */
+  animation-name : onKedip;
+    /* animation setting */
+   animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.btn:hover{
+    transition: 2s;
+    background-color: rgb(20, 19, 19);
+    box-shadow: -2px 2px 2px  rgb(70, 61, 200),2px -2px 2px rgb(63, 212, 175);
+    outline:none;
+        
+}
+
+@keyframes onKedip{
+    0%{
+        box-shadow: -2px 2px 20px rgb(71, 211, 176),2px -2px 2px rgb(78, 69, 201);
+        color:rgba(7, 255, 201, 0.767);
+    }
+    50%{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        box-shadow: -2px 2px 2px  rgb(238, 59, 68),2px -2px 20px rgb(127, 63, 212);
+    }100%{
+        box-shadow: -2px 2px 2px  rgb(70, 61, 200),2px -2px 20px rgb(63, 212, 175);
+        color:rgb(70, 61, 200);
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+}
+a{
+    display:block;
+}
